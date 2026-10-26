@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #bcc2c8;
+}
+
+.app {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 25px 0;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.card-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.playing-card {
+  width: 95px;
+  height: 140px;
+  background: white;
+  border: 3px solid #cbd5e1;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px #0002;
+}
+
+.playing-card.selected {
+  border-color: #f59e0b;
+  background: #fffbeb;
+}
+
+.red {
+  color: #dc2626;
+}
+
+.black {
+  color: #111827;
+}
+
+button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.selection-message {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.playing-card {
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+.playing-card:hover {
+  transform: scale(1.05);
+}
